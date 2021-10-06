@@ -27,7 +27,7 @@ public class transformer : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, waypoints[_currentWaypoint].transform.position, (movespeed * Time.deltaTime));
 
-        if
+        
 
     }
 
