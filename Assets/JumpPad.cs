@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    public Rigidbody rb;
+    public GameObject Ball;
+    Vector3 direction;
+    public float jumpforce = 20f;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-
+        direction = transform.TransformDirection(Vector3.up * jumpforce);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision Collision)
     {
-        if (gameObject.CompareTag("JumpPad"))
+        if (Collision.collider.tag == "Ball")
         {
-            rb.AddForce(0, 5, 0);
+            Ball = Collision.gameObject;
 
-
+            Ball.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
         }
-
     }
+
+  
 
 }
 
