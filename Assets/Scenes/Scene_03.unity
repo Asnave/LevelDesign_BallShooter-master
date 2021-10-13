@@ -114901,17 +114901,17 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 630d0000
+  m_SelectedFaces: 4c030000
   m_SelectedEdges:
-  - a: 13682
-    b: 13683
-  - a: 13684
-    b: 13682
-  - a: 13683
-    b: 13685
-  - a: 13685
-    b: 13684
-  m_SelectedVertices: 72350000733500007435000075350000
+  - a: 3376
+    b: 3377
+  - a: 3378
+    b: 3376
+  - a: 3377
+    b: 3379
+  - a: 3379
+    b: 3378
+  m_SelectedVertices: 300d0000310d0000320d0000330d0000
 --- !u!23 &1806990970
 MeshRenderer:
   m_ObjectHideFlags: 0
