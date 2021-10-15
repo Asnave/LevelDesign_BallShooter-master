@@ -26,7 +26,7 @@ public class JumpPad : MonoBehaviour
             Ball = Collision.gameObject;
 
             Ball.GetComponent<Rigidbody>().AddForce(direction, ForceMode.Impulse);
-            Ball.GetComponent<Rigidbody>().AddForce(0, 0, 50);
+            Ball.GetComponent<Rigidbody>().AddForce(0, 0, 65);
         }
     }
 
